@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Friend</title>
+</head>
+
+<body>
+    <h1>User</h1>
+    <hr>
+    <h3>{{ one_user.first_name }} {{ one_user.last_name}}</h3>
+    <h3>{{ one_user.email }}</h3>
+    <p>Created On: {{ one_user.created_at }}</p>
+    <p>Modified On: {{ one_user.updated_at }}</p>
+
+    <form action="/">
+        <button>Go Back</button>
+    </form>
+    <form action="/users/edit/{{ one_user.id }}">
+        <button>Update</button>
+    </form>
+</body>
+
+</html>
